@@ -1,0 +1,21 @@
+// Component-specific Sass styles
+$component-bg: #f5f5f5;
+$accent-color: #e91e63;
+
+.app-container {
+  background-color: $component-bg;
+  
+  .welcome-section {
+    text-align: center;
+    padding: 2rem;
+    
+    .title {
+      color: $accent-color;
+      font-weight: 600;
+      
+      &:hover {
+        color: darken($accent-color, 10%);
+      }
+    }
+  }
+}
