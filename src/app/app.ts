@@ -1,22 +1,15 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
-import { MatCardModule } from '@angular/material/card';
-import { MatIconModule } from '@angular/material/icon';
-import { MatChipsModule } from '@angular/material/chips';
+import { CommonModule } from './common/common.module';
 
 @Component({
   selector: 'app-root',
   imports: [
     RouterOutlet,
-    MatToolbarModule,
-    MatButtonModule,
-    MatCardModule,
-    MatIconModule,
-    MatChipsModule
+    CommonModule
   ],
   templateUrl: './app.html',
-  styleUrl: './app.scss'
+  styleUrl: './app.scss',
+  host: { 'class': 'app-root', '[style.height]': '"100vh"', '[style.display]': '"block"' },
 })
 export class App {}

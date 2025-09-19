@@ -1,0 +1,22 @@
+.login-button {
+    background-color: var(--mat-sys-primary);
+    color: var(--fb-primary-100);
+    height: 96px;
+    width: 197px;
+    border-radius: var(--mat-sys-corner-extra-large);
+    
+    .button-label-container {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+    .button-label{
+        margin-bottom: 0px;
+    }
+}
+
+.login-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+}
