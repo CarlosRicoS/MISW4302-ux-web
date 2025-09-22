@@ -1,0 +1,17 @@
+
+<app-nav-bar>
+    <app-container-chart 
+        class="data-element"    
+        [hasDateHeader]="true" 
+        [hasGeneralToggle]="false"
+        [title]="'Progreso pausas activas'"
+    >
+        <app-chart-content></app-chart-content>
+    </app-container-chart>
+    <app-container-chart 
+        class="data-element"
+        [title]="'Tus estadísticas semanales'"
+    >
+        <app-summary></app-summary>
+    </app-container-chart>
+</app-nav-bar>
