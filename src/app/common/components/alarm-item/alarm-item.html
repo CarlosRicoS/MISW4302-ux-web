@@ -1,6 +1,9 @@
 <div class="alarm-item" [ngClass]="{'advice': !isChallenge, 'challenge': isChallenge}">
   <span class="alarm-item-chip">
-    <mat-slide-toggle color="primary" aria-label="Toggle chart view">
+    <mat-slide-toggle color="primary" 
+      aria-label="Toggle chart view"
+      [checked]="true"
+    >
     </mat-slide-toggle>
   </span>
   <span class="alarm-item-description">

@@ -1,0 +1,26 @@
+<app-nav-bar>
+    <!-- Your content will be projected into the .content-container -->
+    <app-calendar class="data-element"></app-calendar>
+    <app-container-chart 
+        class="data-element"    
+        [hasDateHeader]="true" 
+        [hasGeneralToggle]="true"
+        [title]="'Gestiona tu día'"
+    >
+        <div>
+            <app-alarm-item [isChallenge]="true"></app-alarm-item>
+            <app-alarm-item [isChallenge]="true"></app-alarm-item>
+            <app-alarm-item [isChallenge]="false"></app-alarm-item>
+            <app-alarm-item [isChallenge]="true"></app-alarm-item>
+            <app-alarm-item [isChallenge]="false"></app-alarm-item>
+            <app-alarm-item [isChallenge]="true"></app-alarm-item>
+            <app-alarm-item [isChallenge]="true"></app-alarm-item>
+        </div>
+    </app-container-chart>
+    <app-container-chart 
+        class="data-element"
+        [title]="'Tu plan semanal'"
+    >
+        <app-summary></app-summary>
+    </app-container-chart>
+</app-nav-bar>

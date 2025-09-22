@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { LoginView } from './components/login-view/login-view';
 import { CommonModule } from '../common/common.module';
 import { LoadingView } from './components/loading-view/loading-view';
+import { ProgramView } from './components/program-view/program-view';
 
 
 
@@ -9,6 +10,7 @@ import { LoadingView } from './components/loading-view/loading-view';
   declarations: [
     LoginView,
     LoadingView,
+    ProgramView,
   ],
   imports: [
     CommonModule,
@@ -16,6 +18,7 @@ import { LoadingView } from './components/loading-view/loading-view';
   exports: [
     LoginView,
     LoadingView,
+    ProgramView,
   ]
 })
 export class ViewsModule { }
