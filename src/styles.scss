@@ -243,6 +243,10 @@ html, body {
   color: var(--mat-sys-primary);
 }
 
+.mat-calendar-body-cell-content.mat-focus-indicator.mat-calendar-body-today.mat-calendar-body-selected {
+  color: var(--fb-primary-100) !important;
+}
+
 .chart-dialog-backdrop.cdk-overlay-backdrop {
   background-color: var(--fb-primary-10);
   opacity: 70%;

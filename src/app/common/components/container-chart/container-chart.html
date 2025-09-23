@@ -1,19 +1,22 @@
 <div class="container-chart-wrapper">
   <div class="container-title">
-      <span class="mat-title-large">Mis Contenedores</span>
+      <span class="mat-title-large">{{title}}</span>
   </div>
   <mat-card appearance="outlined" class="container-chart">
     <mat-card-header>
       @if (hasDateHeader) {
-        <div class="container-chart-header">
-        <span>
-            Lunes, Agosto 17
-        </span>
+        <div class="container-chart-header time-chart-header">
+          <span>
+              Lunes, Agosto 17
+          </span>
         @if (hasGeneralToggle) {
-            <span class="container-chart-header-chip">
-          <mat-slide-toggle color="primary" aria-label="Toggle chart view">
-          </mat-slide-toggle>
-            </span>
+          <span class="container-chart-header-chip">
+            <mat-slide-toggle color="primary" 
+              aria-label="Toggle chart view"
+              [checked]="true"
+            >
+            </mat-slide-toggle>
+          </span>
         }
         </div>
       } @else {
@@ -28,7 +31,7 @@
     </mat-card-header>
     <mat-card-content>
       <div class="container-chart-content">
-          asd
+          <ng-content></ng-content>
       </div>
     </mat-card-content>
     <mat-card-actions>
