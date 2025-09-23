@@ -1,0 +1,26 @@
+.login-view-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding-bottom: 9vh;
+    padding-top: 5vh;
+    .app-logo{
+        height: 172px;
+        width: auto;
+    }
+
+    .app-name {
+        color: var(--mat-sys-primary)
+    }
+}
+
+.background-image {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
