@@ -1,0 +1,22 @@
+<div class="calendar-wrapper">
+    <div class="calendar-title">
+        <span class="mat-title-large">Calendario</span>
+    </div>
+    <mat-card class="inline-calendar-card">
+        <mat-card-header>
+            <div class="header-content">
+                <div class="sync-note mat-label-large">
+                    Calendario Sincronizado (GOOGLE/MICROSOFT)
+                </div>
+                <div class="date-summary mat-headline-large">
+                    Lunes, Agosto 17
+                </div>
+            </div>
+        </mat-card-header>
+        <mat-card-content class="calendar-content">
+            <div class="calendar-container">
+                <mat-calendar [(selected)]="selected"></mat-calendar>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

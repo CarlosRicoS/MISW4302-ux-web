@@ -1,0 +1,29 @@
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .spinner-label {
+        color: var(--mat-sys-primary);
+    }
+    
+    .spinner-logo {
+        .logo {
+            height: 172px; 
+            width: auto;
+            margin-bottom: 12px;
+            animation: spin 2.5s linear infinite;
+        }
+    }
+}

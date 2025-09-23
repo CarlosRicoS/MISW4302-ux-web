@@ -37,17 +37,62 @@ $theme: mat.define-theme((
   )
 ));
 
-// Apply the theme
+// Apply the theme (this includes typography)
 @include mat.all-component-themes($theme);
+
+// Include Material Design typography classes
+@include mat.typography-hierarchy($theme);
 
 // Additional semantic color mappings in main styles root
 :root {
+  @include mat.slide-toggle-overrides((
+    selected-icon-size: 0px,
+    unselected-icon-size: 0px,
+  ));
+
+  @include mat.datepicker-overrides((
+    calendar-date-selected-state-background-color: var(--mat-sys-primary),
+    calendar-date-today-selected-state-outline-color: var(--mat-sys-primary),
+    calendar-date-today-outline-color: var(--mat-sys-primary),
+  ));
+
+  @include mat.dialog-overrides((
+    container-color: transparent,
+    container-shape: 0px,
+    actions-alignment: center,
+    container-min-width: 70vw,
+  ));
+
+  @include mat.tabs-overrides((
+    active-focus-label-text-color: var(--mat-sys-primary),
+    active-label-text-color: var(--mat-sys-primary),
+    active-hover-label-text-color: var(--mat-sys-primary),
+    label-text-font: var(--mat-sys-typography-title-large-font-family),
+    label-text-line-height: var(--mat-sys-typography-title-large-line-height),
+    label-text-size: var(--mat-sys-typography-title-large-font-size),
+    label-text-weight: var(--mat-sys-typography-title-large-font-weight),
+    active-indicator-color: transparent,
+    active-focus-indicator-color: transparent,
+    active-hover-indicator-color: transparent,
+    active-ripple-color: var(--mat-sys-primary),
+    divider-height: 1px,
+    container-height: 87px,
+    divider-color: var(--mat-sys-outline-variant),
+  ));
+
   --mat-sys-secondary-container: var(--fb-secondary-90);     // Secondary Container (#CEFFCD)
   --mat-sys-on-secondary-container: var(--fb-secondary-30);  // On Secondary Container (#003405)
   
   // Tertiary color tokens
   --mat-sys-tertiary: var(--fb-tertiary-40);                 // Tertiary (#4C0F00)
   --mat-sys-on-tertiary: var(--fb-tertiary-100);             // On Tertiary (#FFFFFF)
+  
+  // Global Material component overrides
+  --mat-slide-toggle-selected-track-color: var(--fb-primary-40);
+  --mat-slide-toggle-selected-pressed-track-color: var(--fb-primary-40);
+  --mat-slide-toggle-selected-hover-track-color: var(--fb-primary-40);
+  --mat-slide-toggle-selected-focus-track-color: var(--fb-primary-40);
+  --mat-slide-toggle-selected-pressed-handle-color: var(--fb-primary-100);
   --mat-sys-tertiary-container: var(--fb-tertiary-90);       // Tertiary Container (#FFCBBC)
   --mat-sys-on-tertiary-container: var(--fb-tertiary-30);    // On Tertiary Container (#2F0600)
   
@@ -173,4 +218,46 @@ html, body {
 .card-item {
   flex: 1;
   min-width: 280px;
+}
+
+.mat-mdc-menu-panel {
+  max-width: unset !important;
+  border-radius: var(--mat-sys-corner-extra-large) !important;
+  box-shadow: none !important;
+}
+
+.mat-mdc-menu-content {
+  padding: 0px !important;
+  border-radius: var(--mat-sys-corner-extra-large);
+}
+
+.mat-calendar-body-label {
+  display: none;
+}
+
+.mat-calendar-controls {
+  margin-top: 0px !important;
+}
+
+.mat-calendar-body-cell-content.mat-focus-indicator.mat-calendar-body-today {
+  color: var(--mat-sys-primary);
+}
+
+.chart-dialog-backdrop.cdk-overlay-backdrop {
+  background-color: var(--fb-primary-10);
+  opacity: 70%;
+}
+
+.mdc-tab--active{
+  .mdc-tab__content{
+    border-bottom: solid 3px var(--mat-sys-primary);
+  }
+}
+
+.container-chart-header{
+  margin-bottom: 0px !important;
+}
+
+.mat-mdc-card-header {
+  padding-top: 0px !important;
 }

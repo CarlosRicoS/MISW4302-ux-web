@@ -72,4 +72,13 @@
   --mat-sys-surface-container: var(--fb-gray-85);            // Surface Container (#D7D7D7)
   --mat-sys-surface-container-high: var(--fb-gray-80);       // Surface Container High (#BEBEBE)
   --mat-sys-surface-container-highest: var(--fb-gray-75);    // Surface Container Highest (#A4A4A4)
+
+  // Material Design 3 Corner Radius System
+  --mat-sys-corner-none: 0px;                                // No corner radius
+  --mat-sys-corner-extra-small: 4px;                         // Extra small corner radius
+  --mat-sys-corner-small: 8px;                               // Small corner radius
+  --mat-sys-corner-medium: 12px;                             // Medium corner radius
+  --mat-sys-corner-large: 16px;                              // Large corner radius
+  --mat-sys-corner-extra-large: 28px;                        // Extra large corner radius (28px)
+  --mat-sys-corner-full: 50%;                                // Full corner radius (circular)
 }

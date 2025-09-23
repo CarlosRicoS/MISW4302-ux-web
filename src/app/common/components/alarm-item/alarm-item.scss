@@ -1,0 +1,20 @@
+.alarm-item {
+  d
+  &.advice{
+    background-color: var(--fb-secondary-95);
+  }
+  &.challenge{
+    background-color: var(--fb-secondary-90);
+  }
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 443px;
+  height: 72px;
+  margin-bottom: 4px;
+  padding: 14px 16px;
+
+  .alarm-item-chip {
+    margin-right: 16px;
+  }
+}

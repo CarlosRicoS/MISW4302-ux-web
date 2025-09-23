@@ -1,0 +1,29 @@
+<div class="chart-container">
+  <div class="chart-content">
+    <img src="/monitoring.svg" alt="chart">
+  </div>
+  <div class="chart-expansion" (click)="openDialog()">
+    <mat-icon>fullscreen</mat-icon>
+  </div>
+</div>
+
+<ng-template #dialogContent>
+  <div class="close-action" (click)="closeDialog()">
+    <mat-icon>close</mat-icon>
+  </div>
+  <mat-dialog-content class="chart-dialog">
+    <div class="chart-content">
+      <img src="/monitoring.svg" alt="chart">
+    </div>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <div class="container-chart-navigation">
+      <button matMiniFab aria-label="Previous date">
+        <mat-icon>navigate_before</mat-icon>
+      </button>
+      <button matMiniFab aria-label="Next date">
+        <mat-icon>navigate_next</mat-icon>
+      </button>
+    </div>
+  </mat-dialog-actions>
+</ng-template>

@@ -1,0 +1,29 @@
+.calendar-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .calendar-title {
+    margin-bottom: 24.5px;
+  }
+}
+
+mat-card-header {
+  border-bottom: 1px solid var(--mat-sys-outline-variant);
+}
+.inline-calendar-card {
+  width: 360px;
+  background-color: var(--fb-primary-90);
+}
+
+.header-content {
+    width: 100%;
+    .date-summary {
+      margin-bottom: 12px;
+      margin-top: 36px;
+    }
+}
+
+.calendar-container {
+  padding-bottom: 32px !important;
+}
