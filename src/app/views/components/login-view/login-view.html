@@ -6,8 +6,8 @@
   <p class="instruction-text mat-display-medium">
     Inicie sesión con:
   </p>
-  <app-login-button [label]="'Google'" [iconSrc]="'/Icon-google.svg'"></app-login-button>
-  <app-login-button [label]="'Microsoft'" [iconSrc]="'/Icon-microsoft.svg'"></app-login-button>
+  <app-login-button [label]="'Google'" [iconSrc]="'/Icon-google.svg'" (clicked)="onLoginButtonClick()"></app-login-button>
+  <app-login-button [label]="'Microsoft'" [iconSrc]="'/Icon-microsoft.svg'" (clicked)="onLoginButtonClick()"></app-login-button>
 </div>
 <div class="background-image">
   <svg width="100%" height="100%" viewBox="0 0 1854 1012" fill="none" xmlns="http://www.w3.org/2000/svg"

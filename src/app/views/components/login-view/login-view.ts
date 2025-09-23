@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login-view',
@@ -8,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class LoginView {
 
+  constructor(private router: Router) {}
+
+  onLoginButtonClick() {
+    this.router.navigate(['/program']);
+  }
 }

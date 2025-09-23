@@ -1,59 +1,98 @@
-# MISW4302-ux-web
+# BreakFlow
 
-This is a basic Angular project using Sass for styling, generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.2.
+Este es un proyecto de maquetado en Angular para la aplicación web BreakFLow que utiliza Sass para los estilos, generado usando [Angular CLI](https://github.com/angular/angular-cli) versión 20.3.2.
 
-## Development server
+## Requisitos previos
 
-To start a local development server, run:
+### Versión de Node.js
+
+Este proyecto requiere Node.js versión 18.0 o superior. Se recomienda usar la versión LTS más reciente.
+
+Para verificar tu versión de Node.js, ejecuta:
+
+```bash
+node --version
+```
+
+Para verificar tu versión de npm, ejecuta:
+
+```bash
+npm --version
+```
+
+### Instalación de Node.js
+
+Si no tienes Node.js instalado, puedes descargarlo desde [nodejs.org](https://nodejs.org/) o usar un administrador de versiones:
+
+**Para Windows usando Chocolatey:**
+
+```powershell
+# Instalar Chocolatey (si no lo tienes instalado)
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+# Instalar Node.js
+choco install nodejs
+```
+
+**Para Windows usando Winget:**
+
+```powershell
+# Instalar Node.js LTS
+winget install OpenJS.NodeJS
+```
+
+**Para Linux/macOS usando nvm:**
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+nvm install --lts
+nvm use --lts
+```
+
+## Instalación del proyecto
+
+1. Clona el repositorio:
+
+    ```bash
+    git clone https://github.com/CarlosRicoS/MISW4302-ux-web.git
+    cd MISW4302-ux-web
+    ```
+
+2. Instala las dependencias:
+
+    ```bash
+    npm install
+    ```
+
+3. Instala Angular CLI globalmente (si no lo tienes instalado):
+
+    ```bash
+    npm install -g @angular/cli
+    ```
+
+## Ejecución del proyecto
+
+### Servidor de desarrollo
+
+Para iniciar un servidor de desarrollo local, ejecuta:
+
+```bash
+npm start
+```
+
+o
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Una vez que el servidor esté funcionando, abre tu navegador y navega a `http://localhost:4200/`. La aplicación se recargará automáticamente cada vez que modifiques cualquiera de los archivos fuente.
 
-## Code scaffolding
+## Estructura del proyecto
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+| URL | Vista | Responsable |
+|-----|-------|-------------|
+| `http://localhost:4200/login` | [Vista de Login](http://localhost:4200/login) | Carlos Rico |
+| `http://localhost:4200/loading` | [Vista de carga](http://localhost:4200/loading) | Angel Henao |
+| `http://localhost:4200/program` | [Vista de programa](http://localhost:4200/program) + sidenav y cerrar sesión | Carlos Rico |
+| `http://localhost:4200/progress` | [Vista de progreso](http://localhost:4200/progress) + modal de chart expandido | Angel Henao |

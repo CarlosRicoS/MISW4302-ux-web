@@ -8,14 +8,18 @@
           <mat-icon>menu</mat-icon>
         </div>
       </div>
-      <div class="menu-icon-container" (click)="selectedMenu = 'programa'">
-        <div class="menu-icon" [ngClass]="{'option-selected': selectedMenu === 'programa'}">
+      <div class="menu-icon-container" (click)="selectedMenu = 'programa'; navigateTo()">
+        <div class="menu-icon" 
+          [ngClass]="{'option-selected': selectedMenu === 'programa', '': selectedMenu !== 'programa'}"
+        >
           <mat-icon>calendar_month</mat-icon>
         </div>
         <span class="mat-label-medium">Programa</span>
       </div>
-      <div class="menu-icon-container" (click)="selectedMenu = 'progreso'">
-        <div class="menu-icon" [ngClass]="{'option-selected': selectedMenu === 'progreso'}">
+      <div class="menu-icon-container" (click)="selectedMenu = 'progreso'; navigateTo()">
+        <div class="menu-icon" 
+          [ngClass]="{'option-selected': selectedMenu === 'progreso', '': selectedMenu !== 'progreso'}"
+        >
           <mat-icon>analytics</mat-icon>
         </div>
         <span class="mat-label-medium">Progreso</span>
@@ -152,7 +156,7 @@
     </mat-card-header>
     <mat-card-content>
       <div class="account-menu-content">
-        <button mat-menu-item class="account-logout-button mat-label-large mat-primary">
+        <button mat-menu-item class="account-logout-button mat-label-large mat-primary" (click)="onLogout()">
           <span>Cerrar sesión</span>
         </button>
       </div>
