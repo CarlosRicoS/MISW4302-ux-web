@@ -1,1 +1,50 @@
 // Component styles for the main App component
+.flex-spacer {
+  flex: 1 1 auto;
+}
+
+.ml-8 {
+  margin-left: 8px;
+}
+
+.button-group {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+  
+  button {
+    flex: 1;
+    min-width: 120px;
+    background-color: var(--fb-primary-40);
+  }
+}
+
+mat-card {
+  margin-bottom: 16px;
+}
+
+mat-chip-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+// Responsive design
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    
+    .card-item {
+      min-width: 100%;
+    }
+  }
+  
+  .button-group {
+    flex-direction: column;
+    
+    button {
+      min-width: 100%;
+    }
+  }
+}

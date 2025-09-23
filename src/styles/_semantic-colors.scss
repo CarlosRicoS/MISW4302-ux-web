@@ -1,47 +1,16 @@
-// ============================================================================
-// ALL @USE RULES MUST BE FIRST (SCSS requirement)
-// ============================================================================
+// Material Design 3 Semantic Color Tokens
+// These map Figma color variables to Material Design semantic roles
 
-// Angular Material Theme - @use must come before any other rules
-@use '@angular/material' as mat;
-
-// Import Figma color palette variables
-@use 'styles/figma-colors';
-
-// Import Material Design semantic color tokens
-@use 'styles/semantic-colors';
-
-// Import typography system
-@use 'styles/typography';
-
-// Import utility classes for colors and typography
-@use 'styles/utilities';
-
-// ============================================================================
-// ANGULAR MATERIAL THEME CONFIGURATION
-// ============================================================================
-
-// Include the common styles for Angular Material
-@include mat.core();
-
-// Create a theme using the new Material 3 approach
-$theme: mat.define-theme((
-  color: (
-    theme-type: light,
-    primary: mat.$blue-palette,
-    tertiary: mat.$orange-palette,
-  ),
-  typography: (
-    brand-family: 'Lato',
-    plain-family: 'Lato',
-  )
-));
-
-// Apply the theme
-@include mat.all-component-themes($theme);
-
-// Additional semantic color mappings in main styles root
 :root {
+  // Map Figma semantic variables to Material Design tokens (using variable references)
+  --mat-sys-primary: var(--fb-primary-40);                   // Primary (#0E117C)
+  --mat-sys-on-primary: var(--fb-primary-100);               // On Primary (#FFFFFF)
+  --mat-sys-primary-container: var(--fb-primary-90);         // Primary Container (#CFD6FF)
+  --mat-sys-on-primary-container: var(--fb-primary-30);      // On Primary Container (#060057)
+  
+  // Secondary color tokens
+  --mat-sys-secondary: var(--fb-secondary-40);               // Secondary (#014A0B)
+  --mat-sys-on-secondary: var(--fb-secondary-100);           // On Secondary (#FFFFFF)
   --mat-sys-secondary-container: var(--fb-secondary-90);     // Secondary Container (#CEFFCD)
   --mat-sys-on-secondary-container: var(--fb-secondary-30);  // On Secondary Container (#003405)
   
@@ -101,76 +70,6 @@ $theme: mat.define-theme((
   --mat-sys-surface-container-lowest: var(--fb-gray-100);    // Surface Container Lowest (#FFFFFF)
   --mat-sys-surface-container-low: var(--fb-gray-90);        // Surface Container Low (#F2F2F2)
   --mat-sys-surface-container: var(--fb-gray-85);            // Surface Container (#D7D7D7)
-  // Override Material button colors using Figma semantic colors
-  --mdc-filled-button-container-color: var(--mat-sys-primary);        // #0E117C
-  --mdc-filled-button-label-text-color: var(--mat-sys-on-primary);    // #FFFFFF
-  --mdc-outlined-button-outline-color: var(--mat-sys-primary);        // #0E117C
-  --mdc-outlined-button-label-text-color: var(--mat-sys-primary);     // #0E117C
-  --mdc-text-button-label-text-color: var(--mat-sys-primary);         // #0E117C
-}
-
-// ============================================================================
-// GLOBAL STYLES
-// ============================================================================
-
-/* Global styles */
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: 'Lato', 'Helvetica Neue', sans-serif;
-  background-color: var(--mat-sys-background);
-  color: var(--mat-sys-on-background);
-}
-
-* {
-  box-sizing: border-box;
-}
-
-// ============================================================================
-// CUSTOM COMPONENT STYLES
-// ============================================================================
-
-// Custom utility classes
-.mat-elevation-z0 {
-  box-shadow: none !important;
-}
-
-.full-width {
-  width: 100%;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.mt-16 {
-  margin-top: 16px;
-}
-
-.mb-16 {
-  margin-bottom: 16px;
-}
-
-.p-16 {
-  padding: 16px;
-}
-
-// Custom component styles
-.app-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  margin: 16px 0;
-}
-
-.card-item {
-  flex: 1;
-  min-width: 280px;
+  --mat-sys-surface-container-high: var(--fb-gray-80);       // Surface Container High (#BEBEBE)
+  --mat-sys-surface-container-highest: var(--fb-gray-75);    // Surface Container Highest (#A4A4A4)
 }

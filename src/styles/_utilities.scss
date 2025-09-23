@@ -1,0 +1,319 @@
+// Utility Classes for Direct Color Access
+// These classes provide easy access to Figma color palette and Material Design semantic colors
+
+// ============================================================================
+// FIGMA COLOR PALETTE UTILITIES
+// ============================================================================
+
+// Primary Palette Utilities
+.color-primary-0 { color: var(--fb-primary-0) !important; }
+.bg-primary-0 { background-color: var(--fb-primary-0) !important; }
+.border-primary-0 { border-color: var(--fb-primary-0) !important; }
+
+.color-primary-10 { color: var(--fb-primary-10) !important; }
+.bg-primary-10 { background-color: var(--fb-primary-10) !important; }
+.border-primary-10 { border-color: var(--fb-primary-10) !important; }
+
+.color-primary-20 { color: var(--fb-primary-20) !important; }
+.bg-primary-20 { background-color: var(--fb-primary-20) !important; }
+.border-primary-20 { border-color: var(--fb-primary-20) !important; }
+
+.color-primary-30 { color: var(--fb-primary-30) !important; }
+.bg-primary-30 { background-color: var(--fb-primary-30) !important; }
+.border-primary-30 { border-color: var(--fb-primary-30) !important; }
+
+.color-primary-40 { color: var(--fb-primary-40) !important; }
+.bg-primary-40 { background-color: var(--fb-primary-40) !important; }
+.border-primary-40 { border-color: var(--fb-primary-40) !important; }
+
+.color-primary-50 { color: var(--fb-primary-50) !important; }
+.bg-primary-50 { background-color: var(--fb-primary-50) !important; }
+.border-primary-50 { border-color: var(--fb-primary-50) !important; }
+
+.color-primary-60 { color: var(--fb-primary-60) !important; }
+.bg-primary-60 { background-color: var(--fb-primary-60) !important; }
+.border-primary-60 { border-color: var(--fb-primary-60) !important; }
+
+.color-primary-65 { color: var(--fb-primary-65) !important; }
+.bg-primary-65 { background-color: var(--fb-primary-65) !important; }
+.border-primary-65 { border-color: var(--fb-primary-65) !important; }
+
+.color-primary-70 { color: var(--fb-primary-70) !important; }
+.bg-primary-70 { background-color: var(--fb-primary-70) !important; }
+.border-primary-70 { border-color: var(--fb-primary-70) !important; }
+
+.color-primary-80 { color: var(--fb-primary-80) !important; }
+.bg-primary-80 { background-color: var(--fb-primary-80) !important; }
+.border-primary-80 { border-color: var(--fb-primary-80) !important; }
+
+.color-primary-90 { color: var(--fb-primary-90) !important; }
+.bg-primary-90 { background-color: var(--fb-primary-90) !important; }
+.border-primary-90 { border-color: var(--fb-primary-90) !important; }
+
+.color-primary-95 { color: var(--fb-primary-95) !important; }
+.bg-primary-95 { background-color: var(--fb-primary-95) !important; }
+.border-primary-95 { border-color: var(--fb-primary-95) !important; }
+
+.color-primary-100 { color: var(--fb-primary-100) !important; }
+.bg-primary-100 { background-color: var(--fb-primary-100) !important; }
+.border-primary-100 { border-color: var(--fb-primary-100) !important; }
+
+// Secondary Palette Utilities
+.color-secondary-0 { color: var(--fb-secondary-0) !important; }
+.bg-secondary-0 { background-color: var(--fb-secondary-0) !important; }
+.border-secondary-0 { border-color: var(--fb-secondary-0) !important; }
+
+.color-secondary-10 { color: var(--fb-secondary-10) !important; }
+.bg-secondary-10 { background-color: var(--fb-secondary-10) !important; }
+.border-secondary-10 { border-color: var(--fb-secondary-10) !important; }
+
+.color-secondary-20 { color: var(--fb-secondary-20) !important; }
+.bg-secondary-20 { background-color: var(--fb-secondary-20) !important; }
+.border-secondary-20 { border-color: var(--fb-secondary-20) !important; }
+
+.color-secondary-30 { color: var(--fb-secondary-30) !important; }
+.bg-secondary-30 { background-color: var(--fb-secondary-30) !important; }
+.border-secondary-30 { border-color: var(--fb-secondary-30) !important; }
+
+.color-secondary-40 { color: var(--fb-secondary-40) !important; }
+.bg-secondary-40 { background-color: var(--fb-secondary-40) !important; }
+.border-secondary-40 { border-color: var(--fb-secondary-40) !important; }
+
+.color-secondary-50 { color: var(--fb-secondary-50) !important; }
+.bg-secondary-50 { background-color: var(--fb-secondary-50) !important; }
+.border-secondary-50 { border-color: var(--fb-secondary-50) !important; }
+
+.color-secondary-60 { color: var(--fb-secondary-60) !important; }
+.bg-secondary-60 { background-color: var(--fb-secondary-60) !important; }
+.border-secondary-60 { border-color: var(--fb-secondary-60) !important; }
+
+.color-secondary-70 { color: var(--fb-secondary-70) !important; }
+.bg-secondary-70 { background-color: var(--fb-secondary-70) !important; }
+.border-secondary-70 { border-color: var(--fb-secondary-70) !important; }
+
+.color-secondary-80 { color: var(--fb-secondary-80) !important; }
+.bg-secondary-80 { background-color: var(--fb-secondary-80) !important; }
+.border-secondary-80 { border-color: var(--fb-secondary-80) !important; }
+
+.color-secondary-90 { color: var(--fb-secondary-90) !important; }
+.bg-secondary-90 { background-color: var(--fb-secondary-90) !important; }
+.border-secondary-90 { border-color: var(--fb-secondary-90) !important; }
+
+.color-secondary-95 { color: var(--fb-secondary-95) !important; }
+.bg-secondary-95 { background-color: var(--fb-secondary-95) !important; }
+.border-secondary-95 { border-color: var(--fb-secondary-95) !important; }
+
+.color-secondary-100 { color: var(--fb-secondary-100) !important; }
+.bg-secondary-100 { background-color: var(--fb-secondary-100) !important; }
+.border-secondary-100 { border-color: var(--fb-secondary-100) !important; }
+
+// Tertiary Palette Utilities
+.color-tertiary-0 { color: var(--fb-tertiary-0) !important; }
+.bg-tertiary-0 { background-color: var(--fb-tertiary-0) !important; }
+.border-tertiary-0 { border-color: var(--fb-tertiary-0) !important; }
+
+.color-tertiary-10 { color: var(--fb-tertiary-10) !important; }
+.bg-tertiary-10 { background-color: var(--fb-tertiary-10) !important; }
+.border-tertiary-10 { border-color: var(--fb-tertiary-10) !important; }
+
+.color-tertiary-20 { color: var(--fb-tertiary-20) !important; }
+.bg-tertiary-20 { background-color: var(--fb-tertiary-20) !important; }
+.border-tertiary-20 { border-color: var(--fb-tertiary-20) !important; }
+
+.color-tertiary-30 { color: var(--fb-tertiary-30) !important; }
+.bg-tertiary-30 { background-color: var(--fb-tertiary-30) !important; }
+.border-tertiary-30 { border-color: var(--fb-tertiary-30) !important; }
+
+.color-tertiary-40 { color: var(--fb-tertiary-40) !important; }
+.bg-tertiary-40 { background-color: var(--fb-tertiary-40) !important; }
+.border-tertiary-40 { border-color: var(--fb-tertiary-40) !important; }
+
+.color-tertiary-50 { color: var(--fb-tertiary-50) !important; }
+.bg-tertiary-50 { background-color: var(--fb-tertiary-50) !important; }
+.border-tertiary-50 { border-color: var(--fb-tertiary-50) !important; }
+
+.color-tertiary-60 { color: var(--fb-tertiary-60) !important; }
+.bg-tertiary-60 { background-color: var(--fb-tertiary-60) !important; }
+.border-tertiary-60 { border-color: var(--fb-tertiary-60) !important; }
+
+.color-tertiary-70 { color: var(--fb-tertiary-70) !important; }
+.bg-tertiary-70 { background-color: var(--fb-tertiary-70) !important; }
+.border-tertiary-70 { border-color: var(--fb-tertiary-70) !important; }
+
+.color-tertiary-80 { color: var(--fb-tertiary-80) !important; }
+.bg-tertiary-80 { background-color: var(--fb-tertiary-80) !important; }
+.border-tertiary-80 { border-color: var(--fb-tertiary-80) !important; }
+
+.color-tertiary-90 { color: var(--fb-tertiary-90) !important; }
+.bg-tertiary-90 { background-color: var(--fb-tertiary-90) !important; }
+.border-tertiary-90 { border-color: var(--fb-tertiary-90) !important; }
+
+.color-tertiary-95 { color: var(--fb-tertiary-95) !important; }
+.bg-tertiary-95 { background-color: var(--fb-tertiary-95) !important; }
+.border-tertiary-95 { border-color: var(--fb-tertiary-95) !important; }
+
+.color-tertiary-100 { color: var(--fb-tertiary-100) !important; }
+.bg-tertiary-100 { background-color: var(--fb-tertiary-100) !important; }
+.border-tertiary-100 { border-color: var(--fb-tertiary-100) !important; }
+
+// Gray Palette Utilities
+.color-gray-0 { color: var(--fb-gray-0) !important; }
+.bg-gray-0 { background-color: var(--fb-gray-0) !important; }
+.border-gray-0 { border-color: var(--fb-gray-0) !important; }
+
+.color-gray-10 { color: var(--fb-gray-10) !important; }
+.bg-gray-10 { background-color: var(--fb-gray-10) !important; }
+.border-gray-10 { border-color: var(--fb-gray-10) !important; }
+
+.color-gray-20 { color: var(--fb-gray-20) !important; }
+.bg-gray-20 { background-color: var(--fb-gray-20) !important; }
+.border-gray-20 { border-color: var(--fb-gray-20) !important; }
+
+.color-gray-30 { color: var(--fb-gray-30) !important; }
+.bg-gray-30 { background-color: var(--fb-gray-30) !important; }
+.border-gray-30 { border-color: var(--fb-gray-30) !important; }
+
+.color-gray-40 { color: var(--fb-gray-40) !important; }
+.bg-gray-40 { background-color: var(--fb-gray-40) !important; }
+.border-gray-40 { border-color: var(--fb-gray-40) !important; }
+
+.color-gray-50 { color: var(--fb-gray-50) !important; }
+.bg-gray-50 { background-color: var(--fb-gray-50) !important; }
+.border-gray-50 { border-color: var(--fb-gray-50) !important; }
+
+.color-gray-60 { color: var(--fb-gray-60) !important; }
+.bg-gray-60 { background-color: var(--fb-gray-60) !important; }
+.border-gray-60 { border-color: var(--fb-gray-60) !important; }
+
+.color-gray-70 { color: var(--fb-gray-70) !important; }
+.bg-gray-70 { background-color: var(--fb-gray-70) !important; }
+.border-gray-70 { border-color: var(--fb-gray-70) !important; }
+
+.color-gray-75 { color: var(--fb-gray-75) !important; }
+.bg-gray-75 { background-color: var(--fb-gray-75) !important; }
+.border-gray-75 { border-color: var(--fb-gray-75) !important; }
+
+.color-gray-80 { color: var(--fb-gray-80) !important; }
+.bg-gray-80 { background-color: var(--fb-gray-80) !important; }
+.border-gray-80 { border-color: var(--fb-gray-80) !important; }
+
+.color-gray-85 { color: var(--fb-gray-85) !important; }
+.bg-gray-85 { background-color: var(--fb-gray-85) !important; }
+.border-gray-85 { border-color: var(--fb-gray-85) !important; }
+
+.color-gray-90 { color: var(--fb-gray-90) !important; }
+.bg-gray-90 { background-color: var(--fb-gray-90) !important; }
+.border-gray-90 { border-color: var(--fb-gray-90) !important; }
+
+.color-gray-95 { color: var(--fb-gray-95) !important; }
+.bg-gray-95 { background-color: var(--fb-gray-95) !important; }
+.border-gray-95 { border-color: var(--fb-gray-95) !important; }
+
+.color-gray-100 { color: var(--fb-gray-100) !important; }
+.bg-gray-100 { background-color: var(--fb-gray-100) !important; }
+.border-gray-100 { border-color: var(--fb-gray-100) !important; }
+
+// ============================================================================
+// MATERIAL DESIGN SEMANTIC COLOR UTILITIES
+// ============================================================================
+
+// Primary System Colors
+.color-mat-primary { color: var(--mat-sys-primary) !important; }
+.bg-mat-primary { background-color: var(--mat-sys-primary) !important; }
+.border-mat-primary { border-color: var(--mat-sys-primary) !important; }
+
+.color-mat-on-primary { color: var(--mat-sys-on-primary) !important; }
+.bg-mat-on-primary { background-color: var(--mat-sys-on-primary) !important; }
+.border-mat-on-primary { border-color: var(--mat-sys-on-primary) !important; }
+
+.color-mat-primary-container { color: var(--mat-sys-primary-container) !important; }
+.bg-mat-primary-container { background-color: var(--mat-sys-primary-container) !important; }
+.border-mat-primary-container { border-color: var(--mat-sys-primary-container) !important; }
+
+.color-mat-on-primary-container { color: var(--mat-sys-on-primary-container) !important; }
+.bg-mat-on-primary-container { background-color: var(--mat-sys-on-primary-container) !important; }
+.border-mat-on-primary-container { border-color: var(--mat-sys-on-primary-container) !important; }
+
+// Secondary System Colors
+.color-mat-secondary { color: var(--mat-sys-secondary) !important; }
+.bg-mat-secondary { background-color: var(--mat-sys-secondary) !important; }
+.border-mat-secondary { border-color: var(--mat-sys-secondary) !important; }
+
+.color-mat-on-secondary { color: var(--mat-sys-on-secondary) !important; }
+.bg-mat-on-secondary { background-color: var(--mat-sys-on-secondary) !important; }
+.border-mat-on-secondary { border-color: var(--mat-sys-on-secondary) !important; }
+
+.color-mat-secondary-container { color: var(--mat-sys-secondary-container) !important; }
+.bg-mat-secondary-container { background-color: var(--mat-sys-secondary-container) !important; }
+.border-mat-secondary-container { border-color: var(--mat-sys-secondary-container) !important; }
+
+.color-mat-on-secondary-container { color: var(--mat-sys-on-secondary-container) !important; }
+.bg-mat-on-secondary-container { background-color: var(--mat-sys-on-secondary-container) !important; }
+.border-mat-on-secondary-container { border-color: var(--mat-sys-on-secondary-container) !important; }
+
+// Tertiary System Colors
+.color-mat-tertiary { color: var(--mat-sys-tertiary) !important; }
+.bg-mat-tertiary { background-color: var(--mat-sys-tertiary) !important; }
+.border-mat-tertiary { border-color: var(--mat-sys-tertiary) !important; }
+
+.color-mat-on-tertiary { color: var(--mat-sys-on-tertiary) !important; }
+.bg-mat-on-tertiary { background-color: var(--mat-sys-on-tertiary) !important; }
+.border-mat-on-tertiary { border-color: var(--mat-sys-on-tertiary) !important; }
+
+.color-mat-tertiary-container { color: var(--mat-sys-tertiary-container) !important; }
+.bg-mat-tertiary-container { background-color: var(--mat-sys-tertiary-container) !important; }
+.border-mat-tertiary-container { border-color: var(--mat-sys-tertiary-container) !important; }
+
+.color-mat-on-tertiary-container { color: var(--mat-sys-on-tertiary-container) !important; }
+.bg-mat-on-tertiary-container { background-color: var(--mat-sys-on-tertiary-container) !important; }
+.border-mat-on-tertiary-container { border-color: var(--mat-sys-on-tertiary-container) !important; }
+
+// Error System Colors
+.color-mat-error { color: var(--mat-sys-error) !important; }
+.bg-mat-error { background-color: var(--mat-sys-error) !important; }
+.border-mat-error { border-color: var(--mat-sys-error) !important; }
+
+.color-mat-on-error { color: var(--mat-sys-on-error) !important; }
+.bg-mat-on-error { background-color: var(--mat-sys-on-error) !important; }
+.border-mat-on-error { border-color: var(--mat-sys-on-error) !important; }
+
+.color-mat-error-container { color: var(--mat-sys-error-container) !important; }
+.bg-mat-error-container { background-color: var(--mat-sys-error-container) !important; }
+.border-mat-error-container { border-color: var(--mat-sys-error-container) !important; }
+
+.color-mat-on-error-container { color: var(--mat-sys-on-error-container) !important; }
+.bg-mat-on-error-container { background-color: var(--mat-sys-on-error-container) !important; }
+.border-mat-on-error-container { border-color: var(--mat-sys-on-error-container) !important; }
+
+// Surface System Colors
+.color-mat-background { color: var(--mat-sys-background) !important; }
+.bg-mat-background { background-color: var(--mat-sys-background) !important; }
+.border-mat-background { border-color: var(--mat-sys-background) !important; }
+
+.color-mat-on-background { color: var(--mat-sys-on-background) !important; }
+.bg-mat-on-background { background-color: var(--mat-sys-on-background) !important; }
+.border-mat-on-background { border-color: var(--mat-sys-on-background) !important; }
+
+.color-mat-surface { color: var(--mat-sys-surface) !important; }
+.bg-mat-surface { background-color: var(--mat-sys-surface) !important; }
+.border-mat-surface { border-color: var(--mat-sys-surface) !important; }
+
+.color-mat-on-surface { color: var(--mat-sys-on-surface) !important; }
+.bg-mat-on-surface { background-color: var(--mat-sys-on-surface) !important; }
+.border-mat-on-surface { border-color: var(--mat-sys-on-surface) !important; }
+
+.color-mat-surface-variant { color: var(--mat-sys-surface-variant) !important; }
+.bg-mat-surface-variant { background-color: var(--mat-sys-surface-variant) !important; }
+.border-mat-surface-variant { border-color: var(--mat-sys-surface-variant) !important; }
+
+.color-mat-on-surface-variant { color: var(--mat-sys-on-surface-variant) !important; }
+.bg-mat-on-surface-variant { background-color: var(--mat-sys-on-surface-variant) !important; }
+.border-mat-on-surface-variant { border-color: var(--mat-sys-on-surface-variant) !important; }
+
+.color-mat-outline { color: var(--mat-sys-outline) !important; }
+.bg-mat-outline { background-color: var(--mat-sys-outline) !important; }
+.border-mat-outline { border-color: var(--mat-sys-outline) !important; }
+
+.color-mat-outline-variant { color: var(--mat-sys-outline-variant) !important; }
+.bg-mat-outline-variant { background-color: var(--mat-sys-outline-variant) !important; }
+.border-mat-outline-variant { border-color: var(--mat-sys-outline-variant) !important; }
