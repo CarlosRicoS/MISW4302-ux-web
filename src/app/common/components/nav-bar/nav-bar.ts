@@ -46,12 +46,28 @@ export class NavBar implements OnInit, OnDestroy {
 
   private updateSelectedMenuFromUrl(url: string) {
     // Extract the menu from the URL
-    if (url.includes('/programa') || url === '/') {
+    if (url.includes('/program') || url === '/') {
       this.selectedMenu = 'programa';
-    } else if (url.includes('/progreso')) {
+    } else if (url.includes('/progress')) {
       this.selectedMenu = 'progreso';
-    } else if (url.includes('/perfil')) {
-      this.selectedMenu = 'perfil';
+    }
+  }
+
+  onLogout() {
+    this.router.navigate(['/login']);
+  }
+
+  navigateTo() {
+    switch (this.selectedMenu) {
+      case 'programa':
+        this.router.navigate(['/program']);
+        break;
+      case 'progreso':
+        this.router.navigate(['/progress']);
+        break;
+      default:
+        this.router.navigate(['/program']);
+        break;
     }
   }
 
